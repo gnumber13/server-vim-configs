@@ -8,12 +8,14 @@ noremap <C-p> <C-w>3<>
 noremap <C-u> <C-w>3>
 
 " Normalmode
-nnoremap tt :vs<Return><C-w>w:terminal ++curwin
+nnoremap tt :vs<Return><C-w>w:terminal ++curwin<CR>
 " Insertmode
 inoremap jj <Esc>
 " Terminalbuffer "insertmode"
 tnoremap <Esc> <C-\><C-n>
 tnoremap jj <C-\><C-n>
+tnoremap qtq exit<cr>
+tnoremap :q<CR> <C-u>exit<cr>
 
 
 au FileType python noremap <C-j>j :w !python3<Return>
